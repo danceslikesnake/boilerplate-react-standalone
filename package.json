@@ -1,10 +1,10 @@
 {
-  "name": "react-boilerplate",
-  "version": "4.0.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "name": "boilerplate-react-standalone",
+  "version": "1.0.0",
+  "description": "Boilerplate for standalone React Apps",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/danceslikesnake/boilerplate-react-standalone.git"
   },
   "engines": {
     "npm": ">=5",
@@ -42,7 +42,10 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "version-patch": "npm version patch && git push && git push --tags",
+    "version-minor": "npm version minor && git push && git push --tags",
+    "version-major": "npm version major && git push && git push --tags"
   },
   "browserslist": [
     "last 2 versions",
