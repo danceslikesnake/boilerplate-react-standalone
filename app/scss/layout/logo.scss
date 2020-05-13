@@ -1,0 +1,38 @@
+@import "../utilities/all";
+
+.logo {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+
+  &__contentWrapper {
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat
+  }
+
+  &__animation {
+    @include positionFixed($top: 0, $left: 0);
+  }
+
+  &__mask {
+    @include positionAbsolute($center: true);
+    @include set-z-index('navigation');
+  }
+
+  &__maskImage {
+    &.-desktop {
+      display: none;
+      @include media_queries($desktop) {
+        display:block
+      }
+    }
+    &.-mobile {
+      display: none;
+    }
+  }
+}

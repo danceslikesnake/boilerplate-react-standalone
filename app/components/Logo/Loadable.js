@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for TestingNew
+ * Asynchronously loads the component for LogoMemoized
  *
  */
 

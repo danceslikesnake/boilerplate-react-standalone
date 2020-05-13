@@ -1,6 +1,6 @@
 /**
  *
- * Tests for TestingNew
+ * Tests for LogoMemoized
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -10,17 +10,17 @@ import React from 'react';
 import { render } from 'react-testing-library';
 // import 'jest-dom/extend-expect'; // add some helpful assertions
 
-import TestingNew from '../index';
+import LogoMemoized from '../index';
 
-describe('<TestingNew />', () => {
+describe('<LogoMemoized />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
-    render(<TestingNew />);
+    render(<LogoMemoized />);
     expect(spy).not.toHaveBeenCalled();
   });
 
   it('Expect to have additional unit tests specified', () => {
-    expect(false).toEqual(false);
+    expect(true).toEqual(false);
   });
 
   /**
@@ -31,7 +31,7 @@ describe('<TestingNew />', () => {
   it.skip('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<TestingNew />);
+    } = render(<LogoMemoized />);
     expect(firstChild).toMatchSnapshot();
   });
 });
