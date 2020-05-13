@@ -1,0 +1,23 @@
+/**
+CONFIG
+ */
+@import "./utilities/all";
+
+/**
+VENDORS
+ */
+@import "./vendor/bulma/config";
+//@import "./vendor/fontawesome/fontawesome";
+//@import "./vendor/fontawesome/light";
+//@import "./vendor/fontawesome/regular";
+//@import "./vendor/fontawesome/solid";
+//@import "./vendor/fontawesome/brands";
+//@import "./vendor/fontawesome/duotone";
+
+/**
+STYLES
+ */
+@import "./base/all";
+@import "./layout/all";
+@import "./components/all";
+@import "./orphans/all";

@@ -1,0 +1,7 @@
+@import "./mixins";
+@import "../vendor/modularscale/all";
+
+@mixin body-text {
+  @include calculate-line-height(1);
+  font-size: type-scale(0);
+}
